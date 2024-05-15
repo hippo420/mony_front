@@ -2,11 +2,11 @@
 // pages/calendar.js
 'use client'
 
-import { useEffect, useState } from 'react';
-import Calendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import Calendar from '@fullcalendar/react';
+import { useEffect, useState } from 'react';
 import style from './MyCalendar.module.css';
-import styled from "@emotion/styled";
+//import styled from "@emotion/styled";
 
 const SERVICE_NAME ='';
 

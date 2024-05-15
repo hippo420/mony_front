@@ -7,6 +7,7 @@ console.log('SERVICE_PORT: '+SERVICE_PORT);
 
 //CORS 문제 해결: Proxy이용
 const nextConfig = {
+    
     async rewrites() {
         return [
             {
@@ -16,5 +17,6 @@ const nextConfig = {
         
         ];
     },
+    output: 'export',
 };
 export default nextConfig;

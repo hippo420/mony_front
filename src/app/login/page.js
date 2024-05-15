@@ -65,7 +65,7 @@ export default function Login()
         </form>
         
         <p>
-            Don't have an account?{' '}
+            Do not have an account?{' '}
             <Link href="/signup"></Link>
         </p>
 
