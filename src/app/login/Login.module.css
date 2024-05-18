@@ -1,52 +1,160 @@
-.body {
-    font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
-    color: #404040;
-    background: #0ca3d2;
-}
-
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f4f4f4;
-    
+  display: block;
+  max-width: 680px;
+  width: 80%;
+  margin: 120px auto;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
+
+.links {
+  list-style-type: none;
+}
+.links li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  transition: 0.2s linear;
+}
+.links li:nth-child(2) {
+  opacity: 0.6;
+}
+.links li:nth-child(2):hover {
+  opacity: 1;
+}
+.links li:nth-child(3) {
+  opacity: 0.6;
+  float: right;
+}
+.links li:nth-child(3):hover {
+  opacity: 1;
+}
+.links li a {
+  text-decoration: none;
+  color: #0f132a;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
 }
 
-.inputGroup {
-    margin-bottom: 10px;
+
+
+.separator {
+  display: block;
+  margin: 30px auto 10px;
+  text-align: center;
+  height: 40px;
+  position: relative;
+  background: transparent;
+  color: rgba(15, 19, 42, 0.4);
+  font-size: 13px;
+  width: 90%;
+  max-width: 680px;
+}
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: rgba(15, 19, 42, 0.2);
+  height: 1px;
+  width: 45%;
+}
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: rgba(15, 19, 42, 0.2);
+  height: 1px;
+  width: 45%;
 }
 
-.label {
-    font-weight: bold;
+.google__btn,
+.github__btn {
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  margin: 20px auto;
+  height: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  border: none;
+  line-height: 40px;
+}
+.google__btn.google__btn,
+.github__btn.google__btn {
+  background: #5b90f0;
+  color: white;
+  box-shadow: 0 15px 30px rgba(91, 144, 240, 0.36);
+  transition: 0.2s linear;
+}
+.google__btn.google__btn .fa,
+.github__btn.google__btn .fa {
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+.google__btn.google__btn:hover,
+.github__btn.google__btn:hover {
+  box-shadow: 0 0 0 rgba(91, 144, 240, 0);
+}
+.google__btn.github__btn,
+.github__btn.github__btn {
+  background: #25282d;
+  color: white;
+  box-shadow: 0 15px 30px rgba(37, 40, 45, 0.36);
+  transition: 0.2s linear;
+}
+.google__btn.github__btn .fa,
+.github__btn.github__btn .fa {
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+.google__btn.github__btn:hover,
+.github__btn.github__btn:hover {
+  box-shadow: 0 0 0 rgba(37, 40, 45, 0);
 }
 
-.input[type='email'],
-.input[type='password'] {
-    padding: 8px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+.signin__btn{
+  background:#1ee95b;
+  color:white;
+  display:block;
+  width:92.5%;
+  max-width:680px;
+  height:50px;
+  border-radius:8px;
+  margin:0 auto;
+  border:none;
+  cursor:pointer;
+  font-size:14px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:0 15px 30px rgba(#1ee95b,.36);
+  transition:.2s linear;
+
+}
+.signin__btn::hover{
+    box-shadow:0 0 0 rgba(#1ee95b,.0);
+
+}
+.input__block{
+  margin:20px auto;
+  display:block;
+  position:relative;
+  
 }
 
-.button {
-    padding: 10px;
-    background-color: rgb(92, 167, 92);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: darkgreen;
-}
-
-.p {
-    margin-top: 10px;
+.input{
+  display:block;
+  width:90%;
+  max-width:680px;
+  height:50px;
+  margin:0 auto;
+  border-radius:8px;
+  border:none;
+  background: rgba(#0f132a,.1);
+  color : rgba(#0f132a,.3);
+  padding:0 0 0 15px;
+  font-size:14px;
+  font-family: 'Montserrat', sans-serif;
+  
 }
